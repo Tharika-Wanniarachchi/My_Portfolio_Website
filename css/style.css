@@ -515,7 +515,7 @@ section {
     .container1 {
       margin-top: 5em;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
       gap: 2rem;
   
       .card {
