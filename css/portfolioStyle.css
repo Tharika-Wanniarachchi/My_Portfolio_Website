@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: #282A3A!important ;
+}
+
+.head-title{
+    font-family: 'poppins';
+    font-weight: 600;
+    color: #FEAC01;
+}
+
+.card{
+    border-radius: 10px!important;
+    background: #ffffff29!important;
+    color: #000000;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.card img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card:hover{
+    transform: scale(1.07);
+    transition: transform .5s;
+    border-radius: 10px;
+}
+
+.card .overlay{
+    content: '';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card .overlay button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #feae0199;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.card .overlay button:hover{
+    background-color: #e69900;
+}
+
+
+.card-body{
+    padding: 30px!important;
+}
+.card-body h5{
+    color: #ffffff;
+}
