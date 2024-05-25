@@ -475,7 +475,7 @@ nav .menu-bar {
     width: 200px;
     height: 200px;
     padding: 20px;
-    background-image:  linear-gradient(rgba(120, 235, 112, 0.313), rgba(232, 198, 64, 0.267)), url('/images/card-bg.jpg');
+    background-image:  linear-gradient(rgba(120, 235, 112, 0.313), rgba(232, 198, 64, 0.267)), url('../images/card-bg.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -488,7 +488,7 @@ nav .menu-bar {
 }
 .service-card1 .crd-style:hover{
     transform: scale(1.1);
-    background-image: url('/images/card-bg.jpg');
+    background-image: url('../images/card-bg.jpg');
 }
 
 
