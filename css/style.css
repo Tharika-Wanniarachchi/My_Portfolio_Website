@@ -750,6 +750,7 @@ section {
     border: 1px solid #feae0133;
     padding: 10px;
     font-size: 14px;
+    color: #ffffff;
 }
 .data textarea{
     width: 100%;
@@ -758,6 +759,8 @@ section {
     border-radius: 5px;
     border: 1px solid #feae0133;
     padding: 10px;
+    color: #ffffff;
+    font-family: 'poppins';
 
 }
 .message-section button{
