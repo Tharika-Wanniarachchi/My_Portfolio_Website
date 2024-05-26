@@ -2,12 +2,20 @@
 
 // ================================= tab functionality =====================================
 
+// Add event listener to menu items to close the side menu on mobile
 document.addEventListener("DOMContentLoaded", function() {
     const tabs = document.querySelectorAll('.nav-btn');
+    const menuCheckbox = document.getElementById('menu');
+
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const targetTab = tab.getAttribute('data-tab');
             showContent(targetTab);
+
+            // Close the side menu if on mobile
+            if (window.innerWidth <= 991) {
+                menuCheckbox.checked = false;
+            }
         });
     });
 });
@@ -22,7 +30,6 @@ function showContent(tabName) {
     const targetTab = document.querySelector(`.content-container[data-tab="${tabName}"]`);
     targetTab.classList.remove('hide');
     targetTab.classList.add('show');
-
 
     const activeTab = document.querySelector('.nav-btn.active');
     activeTab.classList.remove('active');

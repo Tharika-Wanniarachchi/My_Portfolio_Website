@@ -803,7 +803,9 @@ section {
         background-color: #1b1b1b;
         transition: all 0.5s;
     }
-
+    #menu:checked~.side-menu {
+        left: 0;
+    }
     .side-menu a span {
         display: block;
     }
