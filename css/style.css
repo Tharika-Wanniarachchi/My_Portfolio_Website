@@ -794,10 +794,7 @@ section {
     
 }
 @media (max-width:991px) {
-    .data {
-        display: none;
-    }
-
+  
     .side-menu {
         width: 100%;
         text-align: center;
