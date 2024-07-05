@@ -276,187 +276,31 @@ nav .menu-bar {
 
 /* ================ Skills Section ======================= */
 
+.skill-card{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px ;
+}
+.skill{
+    margin: 50px 20px;
+    
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
 .skills h1{
     color: #ffffff;
 }
-.skill-second-section{ 
-    padding: 50px;
-    border: none;
-    border-radius: 10px;
-    width:100%;
-
-}
-.s-card{
-    display: block; 
-    margin-top: 50px;
-}
-
-.skill-detail-list ul li{
-    margin: 0px 0px 30px 0px;
-    font-size: 22px;
-}
-.skil-card{
-    width: 40%;
-    height: 150px;
-    background-color: #ffffff2b;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 10px 10px #d3b3302b;
-    font-size: 20px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    padding: 0px 30px;
-    transition: transform .3s;
-}
-.skil-card:hover{
-    transform: scale(1.1);
-}
-.skil-card span{
-    color: #FEAC01;
-    font-weight: 600;
-    font-size: 24px;
-}
-
- /*================ Skills bar ============*/
-.skills{
-    display: flex;
-    width: 100%;
-}
 
 
- .skillbar-wrapper {
-    width: 100%;
-
-  }
-  
-  .skillbar {
-    position:relative;
-    margin-bottom: 20px;
-    width: 100%;
-    background: #ffffff;
-    height: 20px;
-    border-radius: 50px; 
-    border: 1px solid #fff;
-  }
-  
-  .skillbar-title {
-    position:absolute;
-    top:0;
-    left:0;
-    width:110px;
-    font-weight: bold;
-    font-size: 13px;
-    color: #fff!important;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    margin: 0;
-  }
-  
-  .skillbar-title span {
-    display: block;
-    color: #fff!important;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 0 20px;
-    height:20px;
-    line-height: 20px;
-    border-top-left-radius:3px;
-    border-bottom-left-radius:3px;
-    border: none;
-  }
-  
-  .skillbar-bar {
-    height: 20px;
-    width: 0%;
-    border-radius: 50px;
-    transition: 500ms linear;
-    transition-property: width, background-color;
-    border: none;
-  }
-  
-  .skill-bar-percent {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    font-size: 11px;
-    height: 35px;
-    line-height: 20px;
-    color: rgba( 0, 0, 0, 0.4 );
-    transition: color 500ms ease-out;
-  }
-  
-  .complete .skill-bar-percent {
-    color: #000000;
-  }
-  
-  .complete.html5 .skill-bar-percent {
-    color: #fefefe;
-  }
-  
-  .skillbar-title {
-    background: #898887;  
-  }
-  
-  .html5 .skillbar-bar {
-    background: #e67e22;  
-  }
-  
-  
-  .css .skillbar-bar {
-    background: #3498db;  
-  }
- 
-  .javascript .skillbar-bar {
-    background: #f1ac18;
-  }
-  
-
-  .php .skillbar-bar {
-    background: #2c3e50;  
-  }
-
-
-  .c .skillbar-bar {
-    background: #5a68a5;  
-  }
-  
-
-  .java .skillbar-bar {
-    background: #525252;  
-  }
-  
-
-  .python .skillbar-bar {
-    background: #f1958e;  
-  }
-
-
-  .bootstrap .skillbar-bar {
-    background: #86d427;  
-  }
-
-  .reactjs .skillbar-bar {
-    background: #27d1d4;  
-  }
-
-  .nodejs .skillbar-bar {
-    background: #f85e53;  
-  }
-
-
-  .wordpress .skillbar-bar {
-    background: #f576ca;  
-  }
-
-  .figma .skillbar-bar {
-    background: #b894f1;  
-  }
-
-  .canva .skillbar-bar {
-    background: #f4d953;  
-  }
 
 /* ================ Service Section ======================= */
 .service-card1{
