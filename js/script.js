@@ -67,60 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//============================== skill bar=============================================
-(function() {
-    var SkillsBar = function( bars ) {
-        this.bars = document.querySelectorAll( bars );
-        if( this.bars.length > 0 ) {
-            this.init();
-        } 
-    };
-    
-    SkillsBar.prototype = {
-        init: function() {
-            // Function to initialize the SkillsBar
-            var self = this;
-            self.index = -1;
-            self.timer = setTimeout(function() {
-                self.action();
-            }, 500);
-        },
-        select: function( n ) {
-            // Function to select a particular skill bar
-            var self = this,
-                bar = self.bars[n];
-            
-            if( bar ) {
-                var width = bar.parentNode.dataset.percent;
-                bar.style.width = width;
-                bar.parentNode.classList.add( "complete" ); 
-            }
-        },
-        action: function() {
-            // Function to execute the animation action
-            var self = this;
-            self.index++;
-            if( self.index == self.bars.length ) {
-                clearTimeout( self.timer );
-            } else {
-                self.select( self.index );  
-            }
-            setTimeout(function() {
-                self.action();
-            },500);
-        }
-    };
-    
-    window.SkillsBar = SkillsBar;
-    
-    // Function to initialize SkillsBar after clicking the "Skills" tab
-    function initSkillsBar() {
-        var skills = new SkillsBar( ".skillbar-bar" );
-    }
 
-    // Event listener for the "Skills" tab
-    document.querySelector('[data-tab="skills"]').addEventListener('click', initSkillsBar);
-})();
 
 
 
